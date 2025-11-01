@@ -265,3 +265,4 @@ if classify_btn:
 # ==================== FOOTER ====================
 st.markdown("---")
 st.caption("Built with Streamlit | Model: Multinomial Naive Bayes | Features: TF-IDF")
+
