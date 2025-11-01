@@ -26,7 +26,8 @@ st.markdown("*Classify SMS messages as spam or legitimate using machine learning
 # ==================== CONSTANTS ====================
 MODEL_PATH = "spam_model.pkl"
 VECT_PATH = "vectorizer.pkl"
-DEFAULT_FILE_PATH = "SMSSpamCollection"
+# Updated default path to your file location
+DEFAULT_FILE_PATH = r"C:\2 year\binary game\spamming\sms-spam-classifier-main\SMSSpamCollection"
 
 # ==================== LOAD DATA ====================
 @st.cache_data(show_spinner=False)
@@ -50,7 +51,7 @@ def load_data(file_path):
 
 # File upload option
 st.sidebar.header("📁 Data Source")
-upload_option = st.sidebar.radio("Choose data source:", ["Upload File", "Use Local Path"])
+upload_option = st.sidebar.radio("Choose data source:", ["Use Local Path", "Upload File"])
 
 df = None
 error = None
